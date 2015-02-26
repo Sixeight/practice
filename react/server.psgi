@@ -8,8 +8,8 @@ my $app = sub {
   my $env = shift;
   my $req = Plack::Request->new($env);
   my $res = $req->new_response(200);
-  if ($req->path_info eq "/") {
-    $res->redirect("index.html");
+  if ($req->path_info =~ qr{/$}) {
+    $res->redirect($req->path_info . "index.html");
   } else {
     $res->body("ok");
   }
