@@ -10,10 +10,14 @@
   "license": "MIT",
   "devDependencies": {
     "browserify": "^9.0.3",
-    "gulp": "^3.8.11"
+    "gulp": "^3.8.11",
+    "gulp-plumber": "^1.0.0",
+    "gulp-watch": "^4.1.1",
+    "vinyl-source-stream": "^1.1.0"
   },
   "dependencies": {
     "blueprint": "^2.1.4",
+    "request": "^2.53.0",
     "superagent": "^1.0.0"
   }
 }
