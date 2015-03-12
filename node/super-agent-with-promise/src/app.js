@@ -1,8 +1,11 @@
-var superagent = require("superagent");
-var Promise = require("blueprint");
+var promiseagent = require("./promiseagent.js")
 
-superagent
+promiseagent
   .get("./dist/test.json")
-  .end(function(err, res) {
-    console.log(res.ok);
+  .promise()
+  .then(function(res) {
+    console.log(res.body);
+  })
+  .catch(function(err) {
+    console.log(err.message);
   });
