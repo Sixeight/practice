@@ -9,5 +9,11 @@
   "author": "Tomohiro Nishimura",
   "license": "MIT",
   "devDependencies": {
+    "browserify": "^9.0.3",
+    "gulp": "^3.8.11"
+  },
+  "dependencies": {
+    "blueprint": "^2.1.4",
+    "superagent": "^1.0.0"
   }
 }
