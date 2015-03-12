@@ -16,8 +16,7 @@
     "vinyl-source-stream": "^1.1.0"
   },
   "dependencies": {
-    "blueprint": "^2.1.4",
-    "request": "^2.53.0",
+    "bluebird": "^2.9.14",
     "superagent": "^1.0.0"
   }
 }
